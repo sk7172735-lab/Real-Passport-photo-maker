@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passport Photo Maker Pro</title>
+
+<link rel="stylesheet" href="style.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css"
+/>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+    <img src="Aarpre.jpeg" alt="AARPRI Logo" class="logo">
+
+    <h1>Passport Photo Maker Pro</h1>
+
+    <p class="subtitle">
+        Powered by AARPRI DIGITAL
+    </p>
+</div>
+
+<input type="file" id="upload" accept="image/*">
+
+<div class="preview-section">
+    <img id="preview" src="" alt="">
+</div>
+
+<div class="controls">
+
+
+<select id="photoCount">
+    <option value="4">4 Photos</option>
+    <option value="6">6 Photos</option>
+    <option value="12">12 Photos</option>
+</select>
+
+<button onclick="generatePhotos()">
+Generate Sheet
+</button>
+
+<button onclick="downloadPDF()">
+Download PDF
+</button>
+
+<button onclick="window.print()">
+Print
+</button>
+
+</div>
+
+<div id="sheet"></div>
+</div>
+
+<footer class="footer">
+    <h3>AARPRI DIGITAL</h3>
+
+    <p>
+        Website Development | Custom Software |
+        Video Editing | Graphic Design
+    </p>
+
+    <p>
+        Contact: Sandeep Karan <b>7807600465</b>
+    </p>
+
+    <p>
+        Custom Business Solutions Available
+    </p>
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
